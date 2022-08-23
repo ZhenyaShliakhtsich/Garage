@@ -1,0 +1,12 @@
+package com.example.garage.model
+
+data class Modifier(
+    val defaultAmount: Int,
+    val freeOfChargeAmount: Int,
+    val hideIfDefaultAmount: Boolean,
+    val id: String,
+    val maxAmount: Int,
+    val minAmount: Int,
+    val required: Boolean,
+    val splittable: Boolean
+)

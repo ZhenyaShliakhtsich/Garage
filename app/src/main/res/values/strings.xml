@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Garage</string>
+    <string name="busket_name">КОРЗИНА</string>
+    <string name="create_order">ОФОРМИТЬ ЗАКАЗ</string>
+    <string name="menu">Menu</string>
+    <string name="busket">Корзина</string>
+    <string name="profile">Профиль</string>
 </resources>
