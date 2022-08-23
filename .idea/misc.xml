@@ -3,10 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Garage/app/src/main/res/drawable/button_bg.xml" value="0.284" />
+        <entry key="..\:/Garage/app/src/main/res/drawable/item_bg.xml" value="0.284" />
         <entry key="..\:/Garage/app/src/main/res/layout/activity_main.xml" value="0.33242753623188404" />
         <entry key="..\:/Garage/app/src/main/res/layout/fragment_busket.xml" value="0.33242753623188404" />
+        <entry key="..\:/Garage/app/src/main/res/layout/fragment_category.xml" value="0.33242753623188404" />
         <entry key="..\:/Garage/app/src/main/res/layout/fragment_menu.xml" value="0.33242753623188404" />
         <entry key="..\:/Garage/app/src/main/res/layout/fragment_profile.xml" value="0.33242753623188404" />
+        <entry key="..\:/Garage/app/src/main/res/layout/item_busket.xml" value="0.33242753623188404" />
+        <entry key="..\:/Garage/app/src/main/res/layout/item_category.xml" value="0.33242753623188404" />
       </map>
     </option>
   </component>
