@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/main_bg_color"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.garage.ui.BusketFragment">
+    tools:context="com.example.garage.ui.BasketFragment">
 
     <TextView
-        android:id="@+id/busket_header"
+        android:id="@+id/basket_header"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:gravity="center"
-        android:text="@string/busket_name"
+        android:text="@string/basket_name"
         android:textAppearance="@style/header_style"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/basket_recycler_view"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/busket_sum"
+        app:layout_constraintBottom_toTopOf="@id/basket_sum"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/busket_header" />
+        app:layout_constraintTop_toBottomOf="@id/basket_header" />
 
-    <View
-        android:id="@+id/busket_sum"
+    <TextView
+        android:id="@+id/basket_sum"
         android:layout_width="0dp"
-        android:layout_height="@dimen/busket_sum_height"
+        android:layout_height="@dimen/basket_sum_height"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@id/button_bg_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

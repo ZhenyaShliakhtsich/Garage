@@ -1,8 +1,21 @@
 <resources>
     <string name="app_name">Garage</string>
-    <string name="busket_name">КОРЗИНА</string>
+    <string name="basket_name">КОРЗИНА</string>
     <string name="create_order">ОФОРМИТЬ ЗАКАЗ</string>
     <string name="menu">Menu</string>
-    <string name="busket">Корзина</string>
+    <string name="basket">Корзина</string>
     <string name="profile">Профиль</string>
+    <string name="to_basket">В корзину</string>
+    <string name="total_sum">Итого к оплате</string>
+    <string name="login_text">Для доступа к профилю необходима авторизация. Нажмите кнопку ВОЙТИ</string>
+    <string name="enter">ВОЙТИ</string>
+    <string name="enter_to_cabinet">Для оформления заказа войдите в личный кабинет</string>
+    <string name="_375">+375</string>
+    <string name="_336082764">336082764</string>
+    <string name="phone">Телефон</string>
+    <string name="save">СОХРАНИТЬ</string>
+    <string name="email">Эл. Адрес</string>
+    <string name="sex">Пол</string>
+    <string name="name">Имя</string>
+    <string name="dish_added">Блюдо добавленно в корзину</string>
 </resources>

@@ -2,26 +2,57 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="@dimen/basket_item_image_width"
+    android:background="@drawable/item_basket_bg">
 
-    <ImageButton
-        android:id="@+id/item_image"
-        android:layout_width="0dp"
+    <ImageView
+        android:id="@+id/dish_image"
+        android:layout_width="@dimen/basket_item_image_width"
         android:layout_height="0dp"
-        android:layout_margin="@dimen/item_margin"
-        android:background="@drawable/item_bg"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/item_text"
+        android:id="@+id/dish_name"
         android:layout_width="0dp"
-        android:layout_height="@dimen/item_text_height"
-        app:layout_constraintBottom_toBottomOf="@id/item_image"
-        app:layout_constraintEnd_toEndOf="@id/item_image"
-        app:layout_constraintStart_toStartOf="@id/item_image" />
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_item"
+        android:layout_marginTop="@dimen/margin_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dish_image"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAppearance="@style/header_text_style"/>
+
+    <TextView
+        android:id="@+id/dish_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_item"
+        android:layout_marginBottom="@dimen/margin_item"
+        app:layout_constraintBottom_toTopOf="@id/price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dish_image"
+        app:layout_constraintTop_toBottomOf="@id/dish_name" />
+
+    <TextView
+        android:id="@+id/mass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_item"
+        android:layout_marginVertical="@dimen/margin_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dish_image" />
+
+    <Button
+        android:id="@+id/price"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginHorizontal="@dimen/margin_item"
+        android:layout_marginVertical="@dimen/margin_item"
+        android:background="@drawable/item_menu_price_button_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

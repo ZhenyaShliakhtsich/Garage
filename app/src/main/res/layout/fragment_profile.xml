@@ -1,9 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/main_bg_color"
+    android:background="@color/white"
     tools:context="com.example.garage.ui.ProfileFragment">
 
+    <ImageView
+        android:id="@+id/profile_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/profile_entered_logo_padding"
+        android:src="@mipmap/profile_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/phone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/default_margin_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/phone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_logo" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/default_margin_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_text" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/sex_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/default_margin_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/sex"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_text" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/email_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="@dimen/default_margin_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sex_text" />
+
+    <Button
+        android:layout_width="@dimen/big_button_width"
+        android:layout_height="@dimen/big_button_height"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/save"
+        android:textAppearance="@style/primary_text_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_text" />
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="@dimen/default_margin_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_logo" />
+    <EditText
+        android:background="@drawable/edit_text_bg"
+        android:id="@+id/name"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="@dimen/default_margin_horizontal"
+        android:layout_marginTop="20dp"
+        android:hint="@string/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phone_text" />
+    <EditText
+        android:background="@drawable/edit_text_bg"
+        android:id="@+id/sex"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="@dimen/default_margin_horizontal"
+        android:layout_marginTop="20dp"
+        android:hint="@string/sex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name" />
+    <EditText
+        android:background="@drawable/edit_text_bg"
+        android:id="@+id/email"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="@dimen/default_margin_horizontal"
+        android:layout_marginTop="20dp"
+        android:hint="@string/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sex" />
 </androidx.constraintlayout.widget.ConstraintLayout>

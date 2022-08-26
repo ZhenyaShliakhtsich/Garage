@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.garage.ui.LogInFragment">
+
+    <TextView
+        android:id="@+id/enter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/warning_text_margin"
+        android:text="@string/enter_to_cabinet"
+        android:textAppearance="@style/header_text_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/number_text"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/default_margin_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enter_text">
+
+        <TextView
+            android:id="@+id/_375"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="120dp"
+            android:gravity="center"
+            android:text="@string/_375"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:autofillHints="phone"
+            android:background=""
+            android:hint="@string/_336082764"
+            android:inputType="phone"
+            app:layout_constraintStart_toEndOf="@id/_375"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/enter_button"
+        android:layout_marginTop="@dimen/default_margin_horizontal"
+        android:layout_width="@dimen/big_button_width"
+        android:layout_height="@dimen/big_button_height"
+        android:background="@drawable/button_bg"
+        android:text="@string/enter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/number_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

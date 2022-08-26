@@ -6,23 +6,26 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.garage.R
-import com.example.garage.databinding.FragmentBusketBinding
+import com.example.garage.databinding.FragmentLogInBinding
 
-class BusketFragment : Fragment(R.layout.fragment_busket) {
 
-    private lateinit var binding : FragmentBusketBinding
+class LogInFragment : Fragment(R.layout.fragment_log_in) {
+
+    private lateinit var binding: FragmentLogInBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        binding = FragmentBusketBinding.inflate(inflater,container,false)
-        return binding.root
+    ): View? {
+        binding = FragmentLogInBinding.inflate(inflater, container, false)
+        return super.onCreateView(inflater, container, savedInstanceState)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-    }
+        binding.enterButton.setOnClickListener{
 
+        }
+    }
 }

@@ -6,14 +6,14 @@
     app:startDestination="@id/busketFragment">
     <fragment
         android:id="@+id/busketFragment"
-        android:name="com.example.garage.ui.BusketFragment"
+        android:name="com.example.garage.ui.BasketFragment"
         android:label="fragment_busket"
-        tools:layout="@layout/fragment_busket" />
+        tools:layout="@layout/fragment_basket" />
     <fragment
         android:id="@+id/menuFragment"
-        android:name="com.example.garage.ui.MenuFragment"
+        android:name="com.example.garage.ui.CategoriesFragment"
         android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" >
+        tools:layout="@layout/fragment_categories" >
         <action
             android:id="@+id/action_menuFragment_to_categoryFragment"
             app:destination="@id/categoryFragment" />
@@ -26,5 +26,30 @@
     <fragment
         android:id="@+id/categoryFragment"
         android:name="com.example.garage.ui.CategoryFragment"
-        android:label="CategoryFragment" />
+        android:label="CategoryFragment" >
+        <action
+            android:id="@+id/action_categoryFragment_to_dishFragment"
+            app:destination="@id/dishFragment" />
+        <action
+            android:id="@+id/action_categoryFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dishFragment"
+        android:name="com.example.garage.ui.DishFragment"
+        android:label="DishFragment" >
+        <action
+            android:id="@+id/action_dishFragment_to_categoryFragment"
+            app:destination="@id/categoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileLogOutFragment"
+        android:name="com.example.garage.ui.ProfileLogOutFragment"
+        android:label="fragment_profile_logout"
+        tools:layout="@layout/fragment_profile_logout" />
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.garage.ui.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" />
 </navigation>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Garage</string>
+    <string name="basket_name">BASKET</string>
+    <string name="create_order">CREATE ORDER</string>
+    <string name="menu">Menu</string>
+    <string name="basket">Basket</string>
+    <string name="profile">Profile</string>
+    <string name="to_basket">ADD TO CART</string>
+    <string name="total_sum">Total sum</string>
+    <string name="login_text">For access to profile authorization is needed. Press ENTER button</string>
+    <string name="enter">ENTER</string>
+    <string name="enter_to_cabinet">To create the order enter the private cabinet</string>
+    <string name="_375">+375</string>
+    <string name="phone">Phone number</string>
+    <string name="save">SAVE</string>
+    <string name="email">E-mail</string>
+    <string name="sex">Sex</string>
+    <string name="name">Name</string>
+    <string name="_336082764">336082764</string>
+    <string name="dish_added">Dish added to cart</string>
+</resources>
